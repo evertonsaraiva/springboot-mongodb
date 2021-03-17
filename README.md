@@ -33,12 +33,6 @@ Projeto desenvolvido para uma apresentação **Interna**.
   - [x] Obter um funcionário pelo seu id
   - [x] Inserir um novo funcionário
   - [x] Fazer pesquisa por um range de idade 
-    - lâmpadas
-    - pilhas e baterias
-    - papéis e papelão
-    - resíduos eletrônicos
-    - resíduos orgânicos
-    - óleo de cozinha
 
 - [x] Tecnologias:
   - [x] Java 11
@@ -55,8 +49,6 @@ O projeto necessita:
 1. SpringToolSuite4 (ide)
 2. Instalar o mongoDB ou rodar um container
 3. Studio 3T (client para fazer as pesquisas na base nosql) opcional
-
-
 
 ---
 
