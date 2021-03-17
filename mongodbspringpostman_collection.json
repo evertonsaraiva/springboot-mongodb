@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "d96c514c-00f9-4945-ab84-fee4afc639bc",
+		"name": "mongodbspring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FuncionarioAdd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bobby Axelrod\",\r\n    \"idade\": 28,\r\n    \"salario\": 2800,\r\n    \"chefe\": {\r\n        \"codigo\": \"6052251019750049b85d0085\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FuncionarioAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bobby Axelrod\",\r\n    \"idade\": 28,\r\n    \"salario\": 2800,\r\n    \"chefe\": {\r\n        \"codigo\": \"6052260919750049b85d0086\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FuncionarioById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bobby Axelrod\",\r\n    \"idade\": 28,\r\n    \"salario\": 2800,\r\n    \"chefe\": {\r\n        \"codigo\": \"6052260919750049b85d0086\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/funcionarios/6052286136f4fb53f82168f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios",
+						"6052286136f4fb53f82168f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FuncionarioRangeAge",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bobby Axelrod\",\r\n    \"idade\": 28,\r\n    \"salario\": 2800,\r\n    \"chefe\": {\r\n        \"codigo\": \"6052260919750049b85d0086\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/funcionarios/obterporidade/minimo/25/maximo/30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios",
+						"obterporidade",
+						"minimo",
+						"25",
+						"maximo",
+						"30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
