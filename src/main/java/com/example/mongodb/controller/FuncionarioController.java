@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.mongodb.model.Funcionario;
@@ -39,5 +38,10 @@ public class FuncionarioController {
 	@GetMapping("/obterporidade/minimo/{de}/maximo/{ate}")
 	public List<Funcionario> obterFuncionariosPorIdade(@PathVariable Integer de, @PathVariable Integer ate) {
 		return this.funcionariService.obterFuncionariosPorIdade(de, ate);
+	}
+	
+	@GetMapping("/obterpornome/{nome}")
+	public List<Funcionario> obterFuncionariosPorNome(@PathVariable String nome) {
+		return this.funcionariService.obterFuncionariosPorNome(nome);
 	}
 }

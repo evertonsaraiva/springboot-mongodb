@@ -41,4 +41,9 @@ public class FuncionarioServiceImplem implements FuncionarioService {
 		return funcionarios;
 	}
 
+	@Override
+	public List<Funcionario> obterFuncionariosPorNome(String nome) {
+		return this.funcionarioRepository.findByNome(nome);
+	}
+
 }

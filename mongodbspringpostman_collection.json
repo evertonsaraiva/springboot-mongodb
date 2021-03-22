@@ -82,7 +82,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/funcionarios/6052286136f4fb53f82168f3",
+					"raw": "http://localhost:8080/funcionarios/60588bf2fba54d6e3be5d7ff",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -90,7 +90,7 @@
 					"port": "8080",
 					"path": [
 						"funcionarios",
-						"6052286136f4fb53f82168f3"
+						"60588bf2fba54d6e3be5d7ff"
 					]
 				}
 			},
@@ -114,7 +114,40 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/funcionarios/obterporidade/minimo/25/maximo/30",
+					"raw": "http://localhost:8080/funcionarios/obterpornome/Sebastian Berger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"funcionarios",
+						"obterpornome",
+						"Sebastian Berger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FuncionarioByName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Bobby Axelrod\",\r\n    \"idade\": 28,\r\n    \"salario\": 2800,\r\n    \"chefe\": {\r\n        \"codigo\": \"6052260919750049b85d0086\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/funcionarios/obterporidade/minimo/25/maximo/28",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -126,7 +159,7 @@
 						"minimo",
 						"25",
 						"maximo",
-						"30"
+						"28"
 					]
 				}
 			},
