@@ -33,6 +33,7 @@ Projeto desenvolvido para uma apresentação **Interna**.
   - [x] Obter um funcionário pelo seu id
   - [x] Inserir um novo funcionário
   - [x] Fazer pesquisa por um range de idade 
+  - [x] Fazer pesquisa por nome 
 
 - [x] Tecnologias:
   - [x] Java 11
